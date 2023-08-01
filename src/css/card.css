@@ -1,0 +1,55 @@
+.card {
+    height: 100%;
+    width: 25%;
+    position: relative;
+    color: #fff;
+}
+.card img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0.0.0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s ease-out;
+}
+.overlay h5 {
+    font-size: 2rem;
+}
+.overlay:hover{
+    opacity: 0.7;
+}
+@media all and (max-width: 1450px) {
+    .overlay h5 {
+        font-size: 1.3rem;
+    }
+}
+@media  all and (max-width: 1024px) {
+    .card {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    .overlay h5 {
+        font-size: 2rem;
+    }
+}
+@media all and (max-width: 930px) {
+    .overlay h5 {
+        font-size: 1.5rem;
+    }
+}
+@media all and (max-width: 930px) {
+    .overlay h5 {
+    font-size: 1rem;
+    }
+}
